@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mirror: false,
         offset: 100,
         easing: 'ease-out-cubic',
-        // disable: 'mobile'
+        disable: 'mobile'
     });
 
     // Optimized counter animation

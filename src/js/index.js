@@ -1,16 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const swiper = new Swiper('.hero-slider', {
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-    });
-
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.querySelector('#mobile-menu');
     
@@ -64,18 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         };
         window.requestAnimationFrame(step);
     }
-
-    const privacySections = document.querySelectorAll('.privacy-section');
-    const privacyObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-            }
-        });
-    }, { threshold: 0.2 });
-
-    privacySections.forEach(section => privacyObserver.observe(section));
-
+    
     const contactElements = document.querySelectorAll('.contact-animate');
     const contactObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -101,21 +78,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     contactElements.forEach(el => observer.observe(el));
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    const privacySections = document.querySelectorAll('.privacy-section');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-            }
-        });
-    }, { threshold: 0.2 });
-
-    privacySections.forEach(section => observer.observe(section));
-});
-
 
 document.addEventListener('DOMContentLoaded', function() {
     const observerOptions = {

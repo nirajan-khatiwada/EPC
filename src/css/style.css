@@ -113,22 +113,7 @@ form .contact-animate:nth-child(4) { transition-delay: 0.4s; }
 .team-member:nth-child(3) { transition-delay: 0.6s; }
 .team-member:nth-child(4) { transition-delay: 0.8s; }
 
-.privacy-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.5s ease-out;
-}
 
-.privacy-section.animate {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Add animation delays for staggered appearance */
-.privacy-section:nth-child(1) { transition-delay: 0.1s; }
-.privacy-section:nth-child(2) { transition-delay: 0.3s; }
-.privacy-section:nth-child(3) { transition-delay: 0.5s; }
-.privacy-section:nth-child(4) { transition-delay: 0.7s; }
 
 @keyframes fadeUp {
     from {
@@ -144,4 +129,3 @@ form .contact-animate:nth-child(4) { transition-delay: 0.4s; }
 .animate-fadeUp {
     animation: fadeUp 1s ease-out forwards;
 }
-
