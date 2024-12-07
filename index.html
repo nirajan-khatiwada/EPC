@@ -764,10 +764,13 @@
 
 
 <!-- Contact Section -->
-<section id="contact" class="relative py-8 md:py-20 overflow-x-hidden">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-br from-gray-50 to-blue-50 opacity-70"></div>
+<section id="contact" class="py-20 relative overflow-hidden">
+    <!-- Enhanced Background with matching gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-blue-50 opacity-70"></div>
+    <!-- Animated Background Pattern -->
+    <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath d=%22M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zM22.343 0L13.857 8.485 15.272 9.9l9.9-9.9h-2.83zM32 0l-3.486 3.485-1.414-1.414L30.828.342l.457-.342H32zM0 0c2.116 0 4.1.037 5.885.112L14.4 8.626l1.414-1.414L8.274 0h2.444zm23.787 0L14.4 9.385l1.414-1.414L25.272 0h-1.485zm11.515 0L24.915 10.385 26.33 8.97 34.828 0h.474zM0 0h.484L11.97 11.485 13.384 10.07 0 0zm0 0h.484L11.97 11.485 13.384 10.07 0 0z%22 fill=%227C3AED%22 fill-opacity=%220.05%22 fill-rule=%22evenodd%22/%3E%3C/svg%3E')"></div>
 
-    <div class="container mx-auto px-4 max-w-7xl">
+    <div class="container mx-auto px-4 max-w-7xl relative">
         <!-- Header -->
         <div class="text-center mb-8 md:mb-16" 
              data-aos="fade-up" 
@@ -791,6 +794,9 @@
         <!-- Grid Layout -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
             <!-- Contact Form -->
+
+
+            
             <div class="w-full" data-aos="fade-up" data-aos-delay="100">
                 <div class="bg-white/80 rounded-xl shadow-sm border border-gray-200/20 p-4 md:p-6 backdrop-blur-sm transform-gpu">
                     <form id="contactForm" 
@@ -1030,4 +1036,4 @@
      <script defer src="./src/js/animation.js" ></script>
 
 </body>
-</html> 
+</html>
