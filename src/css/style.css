@@ -1,45 +1,23 @@
+/* Hero Section Enhancements */
 .hero-slide {
     height: calc(100vh - 80px);
+    position: relative;
 }
+
 .slide-content {
     opacity: 0;
     visibility: hidden;
     transition: all 1s ease-out;
+    transform: translateY(30px);
 }
+
 .swiper-slide-active .slide-content {
     opacity: 1;
     visibility: visible;
-    transform: translate(0, 3rem); /* Moves button down by 3rem */
-}
-.slide-content h1 {
-    transform: translateY(20px);
-    transition: all 0.8s ease-out 0.3s;
-}
-.slide-content p {
-    transform: translateY(20px);
-    transition: all 0.8s ease-out 0.5s;
-}
-.slide-content a {
-    transform: translateY(20px);
-    transition: all 0.8s ease-out 0.7s;
-}
-.swiper-slide-active .slide-content h1,
-.swiper-slide-active .slide-content p,
-.swiper-slide-active .slide-content a {
-    opacity: 1;
     transform: translateY(0);
 }
-.swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background: white;
-    opacity: 0.5;
-}
-.swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #2563eb;
-}
-/* Add mobile height adjustment */
+
+/* Mobile adjustments */
 @media (max-width: 768px) {
     .hero-slide {
         height: 60vh;
@@ -61,6 +39,19 @@
     }
 }
 
+/* Swiper Pagination */
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: white;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #2563eb;
+}
+
 .contact-animate {
     opacity: 0;
     transform: translateY(20px);
@@ -77,10 +68,6 @@ form .contact-animate:nth-child(1) { transition-delay: 0.1s; }
 form .contact-animate:nth-child(2) { transition-delay: 0.2s; }
 form .contact-animate:nth-child(3) { transition-delay: 0.3s; }
 form .contact-animate:nth-child(4) { transition-delay: 0.4s; }
-
-
-
-
 
 .stat-card {
     transform: translateY(20px);
@@ -126,7 +113,6 @@ form .contact-animate:nth-child(4) { transition-delay: 0.4s; }
 .team-member:nth-child(3) { transition-delay: 0.6s; }
 .team-member:nth-child(4) { transition-delay: 0.8s; }
 
-
 .privacy-section {
     opacity: 0;
     transform: translateY(20px);
@@ -144,9 +130,7 @@ form .contact-animate:nth-child(4) { transition-delay: 0.4s; }
 .privacy-section:nth-child(3) { transition-delay: 0.5s; }
 .privacy-section:nth-child(4) { transition-delay: 0.7s; }
 
-
-   /* Add these styles to your existing styles */
-   @keyframes fadeUp {
+@keyframes fadeUp {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -159,41 +143,5 @@ form .contact-animate:nth-child(4) { transition-delay: 0.4s; }
 
 .animate-fadeUp {
     animation: fadeUp 1s ease-out forwards;
-}
-
-.slide-content {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.8s ease-out;
-}
-
-.swiper-slide-active .slide-content {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Update these styles */
-.hero-slide {
-height: calc(100vh - 80px);
-}
-.slide-content {
-opacity: 0;
-visibility: hidden;
-transition: all 1s ease-out;
-transform: translateY(30px);
-}
-.swiper-slide-active .slide-content {
-opacity: 1;
-visibility: visible;
-transform: translateY(0);
-}
-/* Mobile adjustments */
-@media (max-width: 768px) {
-.hero-slide {
-    height: 60vh;
-}
-.absolute.inset-0 {
-    padding-bottom: 2rem;
-}
 }
 
