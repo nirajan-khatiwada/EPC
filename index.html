@@ -209,232 +209,203 @@
 </section>
 
 
-<!-- Services Section -->
-<section id="services" class="py-20 relative overflow-hidden bg-[#fafafa] dark:bg-gray-900">
-    <!-- Parallax Background -->
-    <div class="absolute inset-0 -z-10">
-        <div class="absolute inset-0 bg-gradient-mesh"></div>
-        <div class="absolute inset-0 bg-noise opacity-20"></div>
-    </div>
-
-    <div class="container mx-auto px-4 max-w-7xl relative z-10">
+<!-- Services Section - Mobile Optimized -->
+<section id="services" class="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-blue-50 overflow-hidden">
+    <div class="container mx-auto px-4 max-w-7xl">
         <!-- Section Header -->
-        <div class="text-center max-w-3xl mx-auto mb-20" 
-             data-aos="fade-down" 
-             data-aos-duration="200">
-            <div class="relative inline-block">
-                <span class="relative inline-flex overflow-hidden rounded-full p-[1px]">
-                    <span class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-gradient-to-r from-blue-400 via-purple-500 to-blue-400"></span>
-                    <span class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-gray-950 px-6 py-1 text-sm font-medium text-gray-200 backdrop-blur-3xl">
-                        Our Solutions
-                    </span>
-                </span>
-                <div class="absolute -top-10 -right-10 w-20 h-20 bg-purple-500/30 rounded-full blur-3xl"></div>
-                <div class="absolute -bottom-10 -left-10 w-20 h-20 bg-blue-500/30 rounded-full blur-3xl"></div>
-            </div>
-            
-            <h2 class="text-5xl md:text-6xl font-bold mt-6 mb-4 relative">
-                <span class="inline-block animate-text-gradient bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 bg-[200%_auto] bg-clip-text text-transparent">
-                    Professional Services
-                </span>
+        <div class="text-center max-w-3xl mx-auto mb-8 md:mb-12">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-600 text-sm font-medium">
+                Our Services
+            </span>
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mt-3">
+                Professional Solutions
             </h2>
         </div>
 
-        <!-- Services Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Service Card -->
-            <div class="group" data-aos="fade-up" data-aos-delay="200">
-                <div class="relative h-full rounded-2xl p-[1px] transition-all duration-500 hover:scale-[1.02]">
-                    <!-- Gradient Border -->
-                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 opacity-50 blur"></div>
-                    
-                    <!-- Card Content -->
-                    <div class="relative h-full rounded-2xl bg-white/90 dark:bg-gray-900/90 p-8 backdrop-blur-xl overflow-hidden">
-                        <!-- Background Pattern -->
-                        <div class="absolute inset-0 opacity-5">
-                            <svg class="w-full h-full" viewBox="0 0 100 100">
-                                <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-                                    <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
-                                </pattern>
-                                <rect width="100" height="100" fill="url(#grid)"/>
-                            </svg>
-                        </div>
-
-                        <!-- Service Image -->
-                        <div class="relative mb-8 overflow-hidden rounded-xl">
-                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-75 mix-blend-overlay"></div>
-                            <img 
-                                src="./src/image/SERVICES.jpg" 
-                                alt="Electrical Service"
-                                class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-700"
-                            />
-                            <!-- Hover Effect -->
-                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/40 to-purple-500/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <div class="absolute inset-0 backdrop-blur-sm"></div>
-                            </div>
-                        </div>
-
-                        <!-- Icon -->
-                        <div class="mb-6 relative">
-                            <div class="absolute inset-0 bg-blue-500/20 rounded-full blur-xl transform group-hover:scale-110 transition-transform duration-500"></div>
-                            <div class="relative w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-500">
-                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
-                            Electrical Services
-                        </h3>
-
-                        <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                            Professional electrical solutions with cutting-edge technology and expert craftsmanship.
-                        </p>
-
-                        <!-- Action Button -->
-                        <div class="relative group/button">
-                            <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-60 group-hover/button:opacity-100 transition duration-200"></div>
-                            <button class="relative flex items-center gap-2 px-6 py-3 bg-white dark:bg-gray-900 rounded-lg leading-none">
-                                <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-medium">Book Us</span>
-                                <svg class="w-4 h-4 stroke-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                                </svg>
-                            </button>
-                        </div>
+        <!-- Services Grid - Mobile Optimized (2 columns) -->
+        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
+            <!-- Service Card 1 -->
+            <div class="service-card transform-gpu hover:-translate-y-1 transition-transform duration-300"
+                 data-aos="fade-up"
+                 data-aos-delay="100">
+                <div class="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden h-full">
+                    <!-- Card Image -->
+                    <div class="aspect-[4/3] relative overflow-hidden">
+                        <img src="./src/image/SERVICES.jpg" 
+                             alt="Electrical Service"
+                             class="w-full h-full object-cover"
+                             loading="lazy"
+                             decoding="async">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                     </div>
-                </div>
-            </div>
-            <div class="group" data-aos="fade-up" data-aos-delay="100">
-                <div class="relative h-full rounded-2xl p-[1px] transition-all duration-500 hover:scale-[1.02]">
-                    <!-- Gradient Border -->
-                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 opacity-50 blur"></div>
                     
                     <!-- Card Content -->
-                    <div class="relative h-full rounded-2xl bg-white/90 dark:bg-gray-900/90 p-8 backdrop-blur-xl overflow-hidden">
-                        <!-- Background Pattern -->
-                        <div class="absolute inset-0 opacity-5">
-                            <svg class="w-full h-full" viewBox="0 0 100 100">
-                                <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-                                    <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
-                                </pattern>
-                                <rect width="100" height="100" fill="url(#grid)"/>
+                    <div class="p-3 md:p-5">
+                        <!-- Icon - Hide on Mobile -->
+                        <div class="hidden md:flex w-10 h-10 md:w-12 md:h-12 mb-4 rounded-lg bg-blue-50 items-center justify-center">
+                            <svg class="w-5 h-5 md:w-6 md:h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                             </svg>
                         </div>
 
-                        <!-- Service Image -->
-                        <div class="relative mb-8 overflow-hidden rounded-xl">
-                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-75 mix-blend-overlay"></div>
-                            <img 
-                                src="./src/image/SERVICES.jpg" 
-                                alt="Electrical Service"
-                                class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-700"
-                            />
-                            <!-- Hover Effect -->
-                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/40 to-purple-500/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <div class="absolute inset-0 backdrop-blur-sm"></div>
-                            </div>
-                        </div>
-
-                        <!-- Icon -->
-                        <div class="mb-6 relative">
-                            <div class="absolute inset-0 bg-blue-500/20 rounded-full blur-xl transform group-hover:scale-110 transition-transform duration-500"></div>
-                            <div class="relative w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-500">
-                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
-                            Electrical Services
-                        </h3>
-
-                        <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                            Professional electrical solutions with cutting-edge technology and expert craftsmanship.
+                        <!-- Title and Description -->
+                        <h3 class="text-base md:text-xl font-semibold text-gray-900 mb-2">Electrical Services</h3>
+                        <p class="text-xs md:text-sm text-gray-600 mb-3 line-clamp-2 md:line-clamp-3">
+                            Professional electrical solutions with expert craftsmanship and reliable service.
                         </p>
 
-                        <!-- Action Button -->
-                        <div class="relative group/button">
-                            <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-60 group-hover/button:opacity-100 transition duration-200"></div>
-                            <button class="relative flex items-center gap-2 px-6 py-3 bg-white dark:bg-gray-900 rounded-lg leading-none">
-                                <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-medium">Book Us</span>
-                                <svg class="w-4 h-4 stroke-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                                </svg>
-                            </button>
-                        </div>
+                        <!-- Action Link -->
+                        <a href="#contact" 
+                        class="group inline-flex items-center justify-center px-4 py-2 mt-2
+                        bg-gradient-to-r from-blue-600 to-purple-600 
+                        hover:from-purple-600 hover:to-blue-600
+                        text-white text-sm font-medium rounded-lg
+                        transform transition-all duration-300
+                        hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25
+                        active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                        <span>Book Us</span>
+                        <svg class="w-4 h-4 ml-2 transform transition-transform group-hover:translate-x-1" 
+                             fill="none" 
+                             stroke="currentColor" 
+                             viewBox="0 0 24 24">
+                            <path stroke-linecap="round" 
+                                  stroke-linejoin="round" 
+                                  stroke-width="2" 
+                                  d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                        <div class="absolute inset-0 rounded-lg bg-white/10 
+                                   opacity-0 group-hover:opacity-100 
+                                   transition-opacity duration-300"></div>
+                    </a>
                     </div>
                 </div>
             </div>
 
-            <div class="group" data-aos="fade-up" data-aos-delay="300">
-                <div class="relative h-full rounded-2xl p-[1px] transition-all duration-500 hover:scale-[1.02]">
-                    <!-- Gradient Border -->
-                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 opacity-50 blur"></div>
+            <!-- Service Card 2 -->
+            <div class="service-card transform-gpu hover:-translate-y-1 transition-transform duration-300"
+                 data-aos="fade-up"
+                 data-aos-delay="200">
+                <div class="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden h-full">
+                    <!-- Card Image -->
+                    <div class="aspect-[4/3] relative overflow-hidden">
+                        <img src="./src/image/SERVICES.jpg" 
+                             alt="Plumbing Service"
+                             class="w-full h-full object-cover"
+                             loading="lazy"
+                             decoding="async">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    </div>
                     
                     <!-- Card Content -->
-                    <div class="relative h-full rounded-2xl bg-white/90 dark:bg-gray-900/90 p-8 backdrop-blur-xl overflow-hidden">
-                        <!-- Background Pattern -->
-                        <div class="absolute inset-0 opacity-5">
-                            <svg class="w-full h-full" viewBox="0 0 100 100">
-                                <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-                                    <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"/>
-                                </pattern>
-                                <rect width="100" height="100" fill="url(#grid)"/>
+                    <div class="p-3 md:p-5">
+                        <!-- Icon - Hide on Mobile -->
+                        <div class="hidden md:flex w-10 h-10 md:w-12 md:h-12 mb-4 rounded-lg bg-purple-50 items-center justify-center">
+                            <svg class="w-5 h-5 md:w-6 md:h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
                             </svg>
                         </div>
 
-                        <!-- Service Image -->
-                        <div class="relative mb-8 overflow-hidden rounded-xl">
-                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-75 mix-blend-overlay"></div>
-                            <img 
-                                src="./src/image/SERVICES.jpg" 
-                                alt="Electrical Service"
-                                class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-700"
-                            />
-                            <!-- Hover Effect -->
-                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/40 to-purple-500/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                <div class="absolute inset-0 backdrop-blur-sm"></div>
-                            </div>
-                        </div>
-
-                        <!-- Icon -->
-                        <div class="mb-6 relative">
-                            <div class="absolute inset-0 bg-blue-500/20 rounded-full blur-xl transform group-hover:scale-110 transition-transform duration-500"></div>
-                            <div class="relative w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-500">
-                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
-                            Electrical Services
-                        </h3>
-
-                        <p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                            Professional electrical solutions with cutting-edge technology and expert craftsmanship.
+                        <!-- Title and Description -->
+                        <h3 class="text-base md:text-xl font-semibold text-gray-900 mb-2">Plumbing Solutions</h3>
+                        <p class="text-xs md:text-sm text-gray-600 mb-3 line-clamp-2 md:line-clamp-3">
+                            Complete plumbing services with modern techniques and quality materials.
                         </p>
 
-                        <!-- Action Button -->
-                        <div class="relative group/button">
-                            <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-60 group-hover/button:opacity-100 transition duration-200"></div>
-                            <button class="relative flex items-center gap-2 px-6 py-3 bg-white dark:bg-gray-900 rounded-lg leading-none">
-                                <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent font-medium">Book Us</span>
-                                <svg class="w-4 h-4 stroke-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                                </svg>
-                            </button>
-                        </div>
+                        <!-- Action Link -->
+                        <a href="#contact" 
+                        class="group inline-flex items-center justify-center px-4 py-2 mt-2
+                        bg-gradient-to-r from-blue-600 to-purple-600 
+                        hover:from-purple-600 hover:to-blue-600
+                        text-white text-sm font-medium rounded-lg
+                        transform transition-all duration-300
+                        hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25
+                        active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                        <span>Book Us</span>
+                        <svg class="w-4 h-4 ml-2 transform transition-transform group-hover:translate-x-1" 
+                             fill="none" 
+                             stroke="currentColor" 
+                             viewBox="0 0 24 24">
+                            <path stroke-linecap="round" 
+                                  stroke-linejoin="round" 
+                                  stroke-width="2" 
+                                  d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                        <div class="absolute inset-0 rounded-lg bg-white/10 
+                                   opacity-0 group-hover:opacity-100 
+                                   transition-opacity duration-300"></div>
+                    </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Repeat for other services -->
+             <!-- Service Card 2 -->
+            <div class="service-card transform-gpu hover:-translate-y-1 transition-transform duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200">
+           <div class="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden h-full">
+               <!-- Card Image -->
+               <div class="aspect-[4/3] relative overflow-hidden">
+                   <img src="./src/image/SERVICES.jpg" 
+                        alt="Plumbing Service"
+                        class="w-full h-full object-cover"
+                        loading="lazy"
+                        decoding="async">
+                   <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+               </div>
+               
+               <!-- Card Content -->
+               <div class="p-3 md:p-5">
+                   <!-- Icon - Hide on Mobile -->
+                   <div class="hidden md:flex w-10 h-10 md:w-12 md:h-12 mb-4 rounded-lg bg-purple-50 items-center justify-center">
+                       <svg class="w-5 h-5 md:w-6 md:h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+                       </svg>
+                   </div>
+
+                   <!-- Title and Description -->
+                   <h3 class="text-base md:text-xl font-semibold text-gray-900 mb-2">Plumbing Solutions</h3>
+                   <p class="text-xs md:text-sm text-gray-600 mb-3 line-clamp-2 md:line-clamp-3">
+                       Complete plumbing services with modern techniques and quality materials.
+                   </p>
+
+                   <!-- Action Link -->
+                   <a href="#contact" 
+                      class="group inline-flex items-center justify-center px-4 py-2 mt-2
+                      bg-gradient-to-r from-blue-600 to-purple-600 
+                      hover:from-purple-600 hover:to-blue-600
+                      text-white text-sm font-medium rounded-lg
+                      transform transition-all duration-300
+                      hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25
+                      active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                      <span>Book Us</span>
+                      <svg class="w-4 h-4 ml-2 transform transition-transform group-hover:translate-x-1" 
+                           fill="none" 
+                           stroke="currentColor" 
+                           viewBox="0 0 24 24">
+                          <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                stroke-width="2" 
+                                d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                      </svg>
+                      <div class="absolute inset-0 rounded-lg bg-white/10 
+                                 opacity-0 group-hover:opacity-100 
+                                 transition-opacity duration-300"></div>
+                  </a>
+               </div>
+           </div>
+       </div>
+
+
+
+       
+
+            <!-- Additional cards with same structure -->
+            <!-- Copy Card 1 or 2 structure and modify content -->
+            <!-- ...existing code for remaining cards... -->
         </div>
     </div>
 </section>
+
 
     <!-- Why Choose Us Section -->
 <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
