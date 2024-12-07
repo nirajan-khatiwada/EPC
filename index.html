@@ -210,10 +210,15 @@
 
 
 <!-- Services Section - Mobile Optimized -->
-<section id="services" class="py-16 md:py-20 bg-gradient-to-br from-gray-50 to-blue-50 overflow-hidden">
-    <div class="container mx-auto px-4 max-w-7xl">
+<section id="services" class="py-16 md:py-20 relative overflow-hidden">
+    <!-- Enhanced Background with matching gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-blue-50 opacity-70"></div>
+    <!-- Animated Background Pattern -->
+    <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath d=%22M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zM22.343 0L13.857 8.485 15.272 9.9l9.9-9.9h-2.83zM32 0l-3.486 3.485-1.414-1.414L30.828.342l.457-.342H32zM0 0c2.116 0 4.1.037 5.885.112L14.4 8.626l1.414-1.414L8.274 0h2.444zm23.787 0L14.4 9.385l1.414-1.414L25.272 0h-1.485zm11.515 0L24.915 10.385 26.33 8.97 34.828 0h.474zM0 0h.484L11.97 11.485 13.384 10.07 0 0zm0 0h.484L11.97 11.485 13.384 10.07 0 0z%22 fill=%227C3AED%22 fill-opacity=%220.05%22 fill-rule=%22evenodd%22/%3E%3C/svg%3E')"></div>
+
+    <div class="container mx-auto px-4 max-w-7xl relative">
         <!-- Section Header -->
-        <div class="text-center max-w-3xl mx-auto mb-8 md:mb-12" data-aos="fade-up" data-aos-duration="800">
+        <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up" data-aos-duration="800">
             <span class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-600 text-sm font-medium">
                 Our Services
             </span>
@@ -222,186 +227,172 @@
             </h2>
         </div>
 
-        <!-- Services Grid - Mobile Optimized (2 columns) -->
-        <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
+        <!-- Services Grid - Single column on mobile -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <!-- Service Card 1 -->
-            <div class="service-card transform-gpu hover:-translate-y-1 transition-transform duration-300"
+             <div class="service-card transform-gpu hover:-translate-y-2 transition-all duration-300"
                  data-aos="fade-up"
                  data-aos-delay="100">
-                <div class="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden h-full">
-                    <!-- Card Image -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 overflow-hidden">
+                    <!-- Card Image with overlay -->
                     <div class="aspect-[4/3] relative overflow-hidden">
                         <img src="./src/image/SERVICES.jpg" 
                              alt="Electrical Service"
-                             class="w-full h-full object-cover"
+                             class="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                              loading="lazy"
                              decoding="async">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/50 via-blue-900/20 to-transparent"></div>
                     </div>
                     
                     <!-- Card Content -->
-                    <div class="p-3 md:p-5">
-                        <!-- Icon - Hide on Mobile -->
-                        <div class="hidden md:flex w-10 h-10 md:w-12 md:h-12 mb-4 rounded-lg bg-blue-50 items-center justify-center">
-                            <svg class="w-5 h-5 md:w-6 md:h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="p-6">
+                        <!-- Icon -->
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-blue-100 to-blue-50 flex items-center justify-center mb-4 transform-gpu transition-transform duration-300 hover:rotate-12">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                             </svg>
                         </div>
 
-                        <!-- Title and Description -->
-                        <h3 class="text-base md:text-xl font-semibold text-gray-900 mb-2">Electrical Services</h3>
-                        <p class="text-xs md:text-sm text-gray-600 mb-3 line-clamp-2 md:line-clamp-3">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Electrical Services</h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
                             Professional electrical solutions with expert craftsmanship and reliable service.
                         </p>
 
-                        <!-- Action Link -->
                         <a href="#contact" 
-                        class="group inline-flex items-center justify-center px-4 py-2 mt-2
-                        bg-gradient-to-r from-blue-600 to-purple-600 
-                        hover:from-purple-600 hover:to-blue-600
-                        text-white text-sm font-medium rounded-lg
-                        transform transition-all duration-300
-                        hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25
-                        active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                        <span>Book Us</span>
-                        <svg class="w-4 h-4 ml-2 transform transition-transform group-hover:translate-x-1" 
-                             fill="none" 
-                             stroke="currentColor" 
-                             viewBox="0 0 24 24">
-                            <path stroke-linecap="round" 
-                                  stroke-linejoin="round" 
-                                  stroke-width="2" 
-                                  d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-                        </svg>
-                        <div class="absolute inset-0 rounded-lg bg-white/10 
-                                   opacity-0 group-hover:opacity-100 
-                                   transition-opacity duration-300"></div>
-                    </a>
+                           class="group inline-flex items-center justify-center px-6 py-3 w-full
+                           bg-gradient-to-r from-blue-600 to-indigo-600 
+                           hover:from-indigo-600 hover:to-blue-600
+                           text-white text-sm font-medium rounded-xl
+                           transform transition-all duration-300
+                           h
+            over:scale-[1.02] hover:shadow-lg hover:shadow-blue-500/25
+                           active:scale-[0.98]">
+                            <span>Book Service</span>
+                            <svg class="w-5 h-5 ml-2 transform transition-transform group-hover:translate-x-1" 
+                                 fill="none" 
+                                 stroke="currentColor" 
+                                 viewBox="0 0 24 24">
+                                <path stroke-linecap="round" 
+                                      stroke-linejoin="round" 
+                                      stroke-width="2" 
+                                      d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-            </div>
+                 </div>
 
-            <!-- Service Card 2 -->
-            <div class="service-card transform-gpu hover:-translate-y-1 transition-transform duration-300"
-                 data-aos="fade-up"
-                 data-aos-delay="200">
-                <div class="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden h-full">
-                    <!-- Card Image -->
-                    <div class="aspect-[4/3] relative overflow-hidden">
-                        <img src="./src/image/SERVICES.jpg" 
-                             alt="Plumbing Service"
-                             class="w-full h-full object-cover"
-                             loading="lazy"
-                             decoding="async">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                    </div>
-                    
-                    <!-- Card Content -->
-                    <div class="p-3 md:p-5">
-                        <!-- Icon - Hide on Mobile -->
-                        <div class="hidden md:flex w-10 h-10 md:w-12 md:h-12 mb-4 rounded-lg bg-purple-50 items-center justify-center">
-                            <svg class="w-5 h-5 md:w-6 md:h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
-                            </svg>
+                        <!-- Service Card 1 -->
+                        <div class="service-card transform-gpu hover:-translate-y-2 transition-all duration-300"
+                        data-aos="fade-up"
+                        data-aos-delay="100">
+                       <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 overflow-hidden">
+                           <!-- Card Image with overlay -->
+                           <div class="aspect-[4/3] relative overflow-hidden">
+                               <img src="./src/image/SERVICES.jpg" 
+                                    alt="Electrical Service"
+                                    class="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                                    loading="lazy"
+                                    decoding="async">
+                               <div class="absolute inset-0 bg-gradient-to-t from-blue-900/50 via-blue-900/20 to-transparent"></div>
+                           </div>
+                           
+                           <!-- Card Content -->
+                           <div class="p-6">
+                               <!-- Icon -->
+                               <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-blue-100 to-blue-50 flex items-center justify-center mb-4 transform-gpu transition-transform duration-300 hover:rotate-12">
+                                   <svg class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                   </svg>
+                               </div>
+       
+                               <h3 class="text-xl font-semibold text-gray-900 mb-3">Electrical Services</h3>
+                               <p class="text-gray-600 mb-4 line-clamp-3">
+                                   Professional electrical solutions with expert craftsmanship and reliable service.
+                               </p>
+       
+                               <a href="#contact" 
+                                  class="group inline-flex items-center justify-center px-6 py-3 w-full
+                                  bg-gradient-to-r from-blue-600 to-indigo-600 
+                                  hover:from-indigo-600 hover:to-blue-600
+                                  text-white text-sm font-medium rounded-xl
+                                  transform transition-all duration-300
+                                  h
+                   over:scale-[1.02] hover:shadow-lg hover:shadow-blue-500/25
+                                  active:scale-[0.98]">
+                                   <span>Book Service</span>
+                                   <svg class="w-5 h-5 ml-2 transform transition-transform group-hover:translate-x-1" 
+                                        fill="none" 
+                                        stroke="currentColor" 
+                                        viewBox="0 0 24 24">
+                                       <path stroke-linecap="round" 
+                                             stroke-linejoin="round" 
+                                             stroke-width="2" 
+                                             d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                   </svg>
+                               </a>
+                           </div>
+                       </div>
                         </div>
 
-                        <!-- Title and Description -->
-                        <h3 class="text-base md:text-xl font-semibold text-gray-900 mb-2">Plumbing Solutions</h3>
-                        <p class="text-xs md:text-sm text-gray-600 mb-3 line-clamp-2 md:line-clamp-3">
-                            Complete plumbing services with modern techniques and quality materials.
-                        </p>
 
-                        <!-- Action Link -->
-                        <a href="#contact" 
-                        class="group inline-flex items-center justify-center px-4 py-2 mt-2
-                        bg-gradient-to-r from-blue-600 to-purple-600 
-                        hover:from-purple-600 hover:to-blue-600
-                        text-white text-sm font-medium rounded-lg
-                        transform transition-all duration-300
-                        hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25
-                        active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                        <span>Book Us</span>
-                        <svg class="w-4 h-4 ml-2 transform transition-transform group-hover:translate-x-1" 
-                             fill="none" 
-                             stroke="currentColor" 
-                             viewBox="0 0 24 24">
-                            <path stroke-linecap="round" 
-                                  stroke-linejoin="round" 
-                                  stroke-width="2" 
-                                  d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-                        </svg>
-                        <div class="absolute inset-0 rounded-lg bg-white/10 
-                                   opacity-0 group-hover:opacity-100 
-                                   transition-opacity duration-300"></div>
-                    </a>
-                    </div>
-                </div>
-            </div>
-
-             <!-- Service Card 2 -->
-            <div class="service-card transform-gpu hover:-translate-y-1 transition-transform duration-300"
-            data-aos="fade-up"
-            data-aos-delay="200">
-           <div class="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden h-full">
-               <!-- Card Image -->
-               <div class="aspect-[4/3] relative overflow-hidden">
-                   <img src="./src/image/SERVICES.jpg" 
-                        alt="Plumbing Service"
-                        class="w-full h-full object-cover"
-                        loading="lazy"
-                        decoding="async">
-                   <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-               </div>
-               
-               <!-- Card Content -->
-               <div class="p-3 md:p-5">
-                   <!-- Icon - Hide on Mobile -->
-                   <div class="hidden md:flex w-10 h-10 md:w-12 md:h-12 mb-4 rounded-lg bg-purple-50 items-center justify-center">
-                       <svg class="w-5 h-5 md:w-6 md:h-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
-                       </svg>
-                   </div>
-
-                   <!-- Title and Description -->
-                   <h3 class="text-base md:text-xl font-semibold text-gray-900 mb-2">Plumbing Solutions</h3>
-                   <p class="text-xs md:text-sm text-gray-600 mb-3 line-clamp-2 md:line-clamp-3">
-                       Complete plumbing services with modern techniques and quality materials.
-                   </p>
-
-                   <!-- Action Link -->
-                   <a href="#contact" 
-                      class="group inline-flex items-center justify-center px-4 py-2 mt-2
-                      bg-gradient-to-r from-blue-600 to-purple-600 
-                      hover:from-purple-600 hover:to-blue-600
-                      text-white text-sm font-medium rounded-lg
-                      transform transition-all duration-300
-                      hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25
-                      active:scale-95 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                      <span>Book Us</span>
-                      <svg class="w-4 h-4 ml-2 transform transition-transform group-hover:translate-x-1" 
-                           fill="none" 
-                           stroke="currentColor" 
-                           viewBox="0 0 24 24">
-                          <path stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                stroke-width="2" 
-                                d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-                      </svg>
-                      <div class="absolute inset-0 rounded-lg bg-white/10 
-                                 opacity-0 group-hover:opacity-100 
-                                 transition-opacity duration-300"></div>
-                  </a>
-               </div>
-           </div>
-       </div>
-
-
-
+                        <!-- Service Card 1 -->
+                        <div class="service-card transform-gpu hover:-translate-y-2 transition-all duration-300"
+                        data-aos="fade-up"
+                        data-aos-delay="100">
+                       <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 overflow-hidden">
+                           <!-- Card Image with overlay -->
+                           <div class="aspect-[4/3] relative overflow-hidden">
+                               <img src="./src/image/SERVICES.jpg" 
+                                    alt="Electrical Service"
+                                    class="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                                    loading="lazy"
+                                    decoding="async">
+                               <div class="absolute inset-0 bg-gradient-to-t from-blue-900/50 via-blue-900/20 to-transparent"></div>
+                           </div>
+                           
+                           <!-- Card Content -->
+                           <div class="p-6">
+                               <!-- Icon -->
+                               <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-blue-100 to-blue-50 flex items-center justify-center mb-4 transform-gpu transition-transform duration-300 hover:rotate-12">
+                                   <svg class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                   </svg>
+                               </div>
        
+                               <h3 class="text-xl font-semibold text-gray-900 mb-3">Electrical Services</h3>
+                               <p class="text-gray-600 mb-4 line-clamp-3">
+                                   Professional electrical solutions with expert craftsmanship and reliable service.
+                               </p>
+       
+                               <a href="#contact" 
+                                  class="group inline-flex items-center justify-center px-6 py-3 w-full
+                                  bg-gradient-to-r from-blue-600 to-indigo-600 
+                                  hover:from-indigo-600 hover:to-blue-600
+                                  text-white text-sm font-medium rounded-xl
+                                  transform transition-all duration-300
+                                  h
+                   over:scale-[1.02] hover:shadow-lg hover:shadow-blue-500/25
+                                  active:scale-[0.98]">
+                                   <span>Book Service</span>
+                                   <svg class="w-5 h-5 ml-2 transform transition-transform group-hover:translate-x-1" 
+                                        fill="none" 
+                                        stroke="currentColor" 
+                                        viewBox="0 0 24 24">
+                                       <path stroke-linecap="round" 
+                                             stroke-linejoin="round" 
+                                             stroke-width="2" 
+                                             d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                   </svg>
+                               </a>
+                           </div>
+                       </div>
+                        </div>
+             
 
-            <!-- Additional cards with same structure -->
-            <!-- Copy Card 1 or 2 structure and modify content -->
-            <!-- ...existing code for remaining cards... -->
+
+            <!-- Copy the same enhanced card structure for other services -->
+            <!-- ...existing service cards... -->
         </div>
     </div>
 </section>
@@ -503,224 +494,80 @@
 
     <!-- About Section -->
 <section id="about" class="py-20 bg-white">
-<div class="container mx-auto px-4 max-w-7xl">
-            <!-- Section Header with Animation -->
-            <div class="text-center max-w-2xl mx-auto mb-16" 
-                 data-aos="fade-down" 
-                 data-aos-duration="1000"
-                 data-aos-once="true">
-                <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm
-                           transform transition-all duration-500 hover:scale-110 inline-block"
-                      data-aos="fade-up" 
-                      data-aos-delay="200">
-                    About Us
-                </span>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3 mb-4
-                           transform transition-all duration-500 hover:text-blue-600"
-                    data-aos="fade-up" 
-                    data-aos-delay="400">
-                    Your Trusted Service Partner
-                </h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mb-4 
-                            transform transition-all duration-500 hover:w-32
-                            animate-pulse"
-                     data-aos="zoom-in" 
-                     data-aos-delay="600">
-                </div>
-            </div>
-
-   <!-- Statistics Section with 3D Cards and Animations -->
-<div class="stats-container relative py-20 overflow-hidden" data-aos="fade-up">
-    <!-- Animated Background -->
-    <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-10 animate-gradient"></div>
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-4">
-        <!-- Projects Counter -->
-        <div class="stat-card group perspective" data-rellax-speed="2">
-            <div class="relative transform transition-all duration-500 group-hover:rotate-y-12 group-hover:scale-105">
-                <div class="stats-content bg-white/80 backdrop-blur-lg rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/20">
-                    <div class="icon-wrapper mb-6">
-                        <div class="h-16 w-16 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 mx-auto flex items-center justify-center">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 20 20">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="counter-value text-center text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 mb-3" 
-                         data-target="500"
-                         data-aos="zoom-in"
-                         data-aos-delay="200">0</div>
-                    <p class="text-gray-700 font-medium text-center text-lg">Projects Completed</p>
-                </div>
+    <div class="container mx-auto px-4 max-w-7xl">
+        <!-- Section Header with Animation -->
+        <div class="text-center max-w-2xl mx-auto mb-16" 
+             data-aos="fade-down" 
+             data-aos-duration="1000"
+             data-aos-once="true">
+            <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm
+                       transform transition-all duration-500 hover:scale-110 inline-block"
+                  data-aos="fade-up" 
+                  data-aos-delay="200">
+                About Us
+            </span>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3 mb-4
+                       transform transition-all duration-500 hover:text-blue-600"
+                data-aos="fade-up" 
+                data-aos-delay="400">
+                Your Trusted Service Partner
+            </h2>
+            <div class="w-20 h-1 bg-blue-600 mx-auto mb-4 
+                        transform transition-all duration-500 hover:w-32
+                        animate-pulse"
+                 data-aos="zoom-in" 
+                 data-aos-delay="600">
             </div>
         </div>
 
-        <!-- Clients Counter -->
-        <div class="stat-card group perspective" data-rellax-speed="3">
-            <div class="relative transform transition-all duration-500 group-hover:rotate-y-12 group-hover:scale-105">
-                <div class="stats-content bg-white/80 backdrop-blur-lg rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/20">
-                    <div class="icon-wrapper mb-6">
-                        <div class="h-16 w-16 rounded-full bg-gradient-to-tr from-purple-500 to-pink-600 mx-auto flex items-center justify-center">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
-                            </svg>
-                        </div>
+        <!-- Optimized Statistics Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-4">
+            <!-- Projects Counter -->
+            <div class="stat-card text-center p-6 bg-white rounded-xl shadow-lg border border-gray-200"
+                 data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-wrapper mb-4">
+                    <div class="h-16 w-16 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 mx-auto flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 20 20">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
                     </div>
-                    <div class="counter-value text-5xl font-extrabold bg-clip-text text-center text-transparent bg-gradient-to-r from-purple-600 to-pink-600 mb-3"
-                         data-target="300"
-                         data-aos="zoom-in"
-                         data-aos-delay="400">0</div>
-                    <p class="text-gray-700 font-medium text-lg text-center">Happy Clients</p>
                 </div>
+                <div class="counter-value text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 mb-3" 
+                     data-target="500">500</div>
+                <p class="text-gray-700 font-medium text-lg">Projects Completed</p>
             </div>
-        </div>
 
-        <!-- Experience Counter -->
-        <div class="stat-card group perspective" data-rellax-speed="4">
-            <div class="relative transform transition-all duration-500 group-hover:rotate-y-12 group-hover:scale-105">
-                <div class="stats-content bg-white/80 backdrop-blur-lg rounded-2xl p-8 shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/20">
-                    <div class="icon-wrapper mb-6">
-                        <div class="h-16 w-16 rounded-full bg-gradient-to-tr from-green-500 to-teal-600 mx-auto flex items-center justify-center">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                        </div>
+            <!-- Clients Counter -->
+            <div class="stat-card text-center p-6 bg-white rounded-xl shadow-lg border border-gray-200"
+                 data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-wrapper mb-4">
+                    <div class="h-16 w-16 rounded-full bg-gradient-to-tr from-purple-500 to-pink-600 mx-auto flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
                     </div>
-                    <div class="counter-value text-5xl font-extrabold text-center bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-teal-600 mb-3"
-                         data-target="10"
-                         data-aos="zoom-in"
-                         data-aos-delay="600">0</div>
-                    <p class="text-gray-700 font-medium text-lg text-center">Years Experience</p>
                 </div>
+                <div class="counter-value text-5xl font-extrabold bg-clip-text text-center text-transparent bg-gradient-to-r from-purple-600 to-pink-600 mb-3"
+                     data-target="300">300</div>
+                <p class="text-gray-700 font-medium text-lg text-center">Happy Clients</p>
+            </div>
+
+            <!-- Experience Counter -->
+            <div class="stat-card text-center p-6 bg-white rounded-xl shadow-lg border border-gray-200"
+                 data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-wrapper mb-4">
+                    <div class="h-16 w-16 rounded-full bg-gradient-to-tr from-green-500 to-teal-600 mx-auto flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="counter-value text-5xl font-extrabold text-center bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-teal-600 mb-3"
+                     data-target="10">10</div>
+                <p class="text-gray-700 font-medium text-lg text-center">Years Experience</p>
             </div>
         </div>
     </div>
-</div>
-
-            <!-- Team Section -->
-
-<!-- Enhanced Team Section -->
-<div class="mt-20 relative overflow-hidden">
-    <!-- Background Pattern -->
-    <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50 opacity-70"></div>
-    <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath d=%22M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zM22.343 0L13.857 8.485 15.272 9.9l9.9-9.9h-2.83zM32 0l-3.486 3.485-1.414-1.414L30.828.342l.457-.342H32zM0 0c2.116 0 4.1.037 5.885.112L14.4 8.626l1.414-1.414L8.274 0h2.444zm23.787 0L14.4 9.385l1.414-1.414L25.272 0h-1.485zm11.515 0L24.915 10.385 26.33 8.97 34.828 0h.474zM0 0h.484L11.97 11.485 13.384 10.07 0 0zm0 0h.484L11.97 11.485 13.384 10.07 0 0z%22 fill=%227C3AED%22 fill-opacity=%220.05%22 fill-rule=%22evenodd%22/%3E%3C/svg%3E')"></div>
-    <div class="relative z-10">
-        <h3 class="text-2xl md:text-4xl font-bold text-center mb-16 text-indigo-900" data-aos="fade-down">
-            Our Expert Team
-        </h3>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
-            <!-- Team Member 1 -->
-            <div class="team-member" data-aos="fade-up" data-aos-delay="100" data-rellax-speed="3">
-                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
-                    <div class="relative overflow-hidden">
-                        <img src="./src/image/team1.jpg" alt="Team Member" class="w-full h-64 object-cover transform hover:scale-110 transition-all duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div class="p-6 text-center bg-gradient-to-b from-white to-indigo-50">
-                        <h4 class="font-bold text-xl mb-2 text-indigo-900">Ashtik Dahal</h4>
-                        <p class="text-indigo-600 mb-4 font-medium">Lead Electrician</p>
-                        <div class="flex justify-center space-x-4">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-800 transform hover:scale-110 transition-all">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-800 transform hover:scale-110 transition-all">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-member" data-aos="fade-up" data-aos-delay="200" data-rellax-speed="4">
-                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
-                    <div class="relative overflow-hidden">
-                        <img src="./src/image/team1.jpg" alt="Team Member" class="w-full h-64 object-cover transform hover:scale-110 transition-all duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div class="p-6 text-center bg-gradient-to-b from-white to-indigo-50">
-                        <h4 class="font-bold text-xl mb-2 text-indigo-900">Ashtik Dahal</h4>
-                        <p class="text-indigo-600 mb-4 font-medium">Lead Electrician</p>
-                        <div class="flex justify-center space-x-4">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-800 transform hover:scale-110 transition-all">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-800 transform hover:scale-110 transition-all">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-member" data-aos="fade-up" data-aos-delay="300" data-rellax-speed="2">
-                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
-                    <div class="relative overflow-hidden">
-                        <img src="./src/image/team1.jpg" alt="Team Member" class="w-full h-64 object-cover transform hover:scale-110 transition-all duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div class="p-6 text-center bg-gradient-to-b from-white to-indigo-50">
-                        <h4 class="font-bold text-xl mb-2 text-indigo-900">Ashtik Dahal</h4>
-                        <p class="text-indigo-600 mb-4 font-medium">Lead Electrician</p>
-                        <div class="flex justify-center space-x-4">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-800 transform hover:scale-110 transition-all">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-800 transform hover:scale-110 transition-all">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="team-member" data-aos="fade-up" data-aos-delay="400" data-rellax-speed="1">
-                <div class="bg-white rounded-xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-2xl">
-                    <div class="relative overflow-hidden">
-                        <img src="./src/image/team1.jpg" alt="Team Member" class="w-full h-64 object-cover transform hover:scale-110 transition-all duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-indigo-900/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
-                    </div>
-                    <div class="p-6 text-center bg-gradient-to-b from-white to-indigo-50">
-                        <h4 class="font-bold text-xl mb-2 text-indigo-900">Ashtik Dahal</h4>
-                        <p class="text-indigo-600 mb-4 font-medium">Lead Electrician</p>
-                        <div class="flex justify-center space-x-4">
-                            <a href="#" class="text-indigo-600 hover:text-indigo-800 transform hover:scale-110 transition-all">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="text-indigo-600 hover:text-indigo-800 transform hover:scale-110 transition-all">
-                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Repeat the same structure for Team Members 2-4 with increasing data-aos-delay -->
-            <!-- For Member 2: data-aos-delay="200" data-rellax-speed="3" -->
-            <!-- For Member 3: data-aos-delay="300" data-rellax-speed="1" -->
-            <!-- For Member 4: data-aos-delay="400" data-rellax-speed="4" -->
-        </div>
-    </div>
-</div>
-
-
-</div>
 </section>
 
 
